@@ -32,7 +32,7 @@ pipeline {
 //             }
         stage(('Deploy'){
             steps{
-                sh '/var/deployment/./deployment.sh
+                bat '/var/deployment/./deployment.sh
             }
         }
     }
