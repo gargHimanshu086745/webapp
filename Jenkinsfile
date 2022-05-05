@@ -30,7 +30,7 @@ pipeline {
 //             steps {
 //                 bat 'mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.analysis.mode=publish'
 //             }
-        stage(('Deploy'){
+        stage('Deploy'){
             steps{
                 bat '/var/deployment/./deployment.sh'
             }
