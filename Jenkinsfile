@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'Built-In Node'
+        label 'slave_02'
     }
     stages {
         stage('Build') {
@@ -30,10 +30,10 @@ pipeline {
 //             steps {
 //                 bat 'mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.analysis.mode=publish'
 //             }
-        stage('Deploy'){
-            steps{
-                bat '/var/deployment/./deployment.sh'
-            }
-        }
+//        stage('Deploy'){
+//            steps{
+//                bat '/var/deployment/./deployment.sh'
+//            }
+//        }
     }
 }
